@@ -6,6 +6,8 @@
 </head>
 <body>
 
+    {% include template %}
+
     {# This is a comment #}
 
     {# check the existence of now variable in the template using if tag #}
@@ -17,6 +19,8 @@
     {% endif %}
 
     <p>Current scheme: {{ request.scheme }}</p>
+
+    <P>BASE_DIR : {{ base_dir }}</P>
 
 </body>
 </html>
